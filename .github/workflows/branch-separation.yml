@@ -2,7 +2,7 @@ name: Testing branch separation behavior
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "test" ]
 
 jobs:
   test:
@@ -12,4 +12,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Run a one-line script
-        run: echo Hello world from MAIN!
+        run: echo Hello world from TEST!
